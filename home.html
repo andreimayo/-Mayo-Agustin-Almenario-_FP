@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">ShoeStock</a>
+        <div class="logo">Home</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="nike.html">nike ✔</a></li>
+                <li><a href="adidas.html">adidas</a></li>
+                <li><a href="details.html">Account</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+   
+    <section id="home">
+        <h2>Sales</h2>
+        <div class="shoe-container">
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Nike-KD-4-Galaxy-2024-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1708024293&q=60" alt="Shoe 1">
+                <h3>Nike KD 4 Galaxy (2024)</h3>
+                <p>$40</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Nike KD 4 Galaxy (2024)', 40, 'https://images.stockx.com/images/Nike-KD-4-Galaxy-2024-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1708024293&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Nike KD 4 Galaxy (2024)', 40)">Buy Now</button>
+
+            </div>
+            
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Nike-Zoom-KD-IV-Weatherman-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707165127&q=60" alt="Shoe 2">
+                <h3>Nike KD 4 Weatherman (2011)</h3>
+                <p>$50</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Nike KD 4 Weatherman (2011)', 50, 'https://images.stockx.com/images/Nike-Zoom-KD-IV-Weatherman-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707165127&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Nike KD 4 Weatherman (2011)', 50)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-3-Retro-J-Balvin-Rio.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1714600225&q=60" alt="Shoe 3">
+                <h3>Jordan 3 Retro J Baldwin Rio</h3>
+                <p>$50</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 3 Retro J Baldwin Rio', 50, 'https://images.stockx.com/images/Air-Jordan-3-Retro-J-Balvin-Rio.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1714600225&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 3 Retro J Baldwin Rio', 50)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Nike-Zoom-KD-IV-Nerf-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606319075&q=60" alt="Shoe 4">
+                <h3>Nike KD 4 Galaxy (2024)</h3>
+                <p>$65</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Nike KD 4 Galaxy(2024)', 65, 'https://images.stockx.com/images/Nike-Zoom-KD-IV-Nerf-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606319075&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Nike KD 4 Galaxy(2024)', 50)">Buy Now</button>
+
+
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Nike-KD-4-Year-of-the-Dragon-20-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707932876&q=60" alt="Shoe 5">
+                <h3>Nike KD 4 Year of the Dragon 2.0</h3>
+                <p>$70</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Nike KD 4 Year of the Dragon 2.0', 70, 'https://images.stockx.com/images/Nike-KD-4-Year-of-the-Dragon-20-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707932876&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Nike KD 4 Year of the Dragon 2.0', 70)">Buy Now</button>
+
+
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Nike-SB-Dunk-Low-Futura-Laboratories-Bleached-Aqua-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1713878799&q=60" alt="Shoe 6">
+                <h3>Nike SB Dunk Low Futura</h3>
+                <p>$55</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Nike SB Dunk Low Futura', 55, 'https://images.stockx.com/images/Nike-SB-Dunk-Low-Futura-Laboratories-Bleached-Aqua-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1713878799&q=60')">Add to Cart</button>`
+                <button onclick="buyNow('Nike SB Dunk Low Futura', 55)">Buy Now</button>
+
+
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/adidas-Samba-Nylon-Wales-Bonner-Wonder-Clay-Royal-Updated.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1715745869&q=60" alt="Shoe 7">
+                <h3>adidas Samba Nylon Wales</h3>
+                <p>$55</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('adidas Samba Nylon Wales', 55, 'https://images.stockx.com/images/adidas-Samba-Nylon-Wales-Bonner-Wonder-Clay-Royal-Updated.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1715745869&q=60')">Add to Cart</button>
+                <button onclick="buyNow('adidas Samba Nylon Wales', 55)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Canary-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1714996334&q=60" alt="Shoe 8">
+                <h3>Jordan 1 Retro Low OG SP Travis Scott</h3>
+                <p>$45</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Retro Low OG SP Travis Scott', 45, 'https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Canary-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1714996334&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Retro Low OG SP Travis Scott', 45)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Mid-Light-Smoke-Grey-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606319491&q=60" alt="Shoe 9">
+                <h3>Jordan 1 Mid Light Smoke Grey</h3>
+                <p>$70</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Mid Light Smoke Grey', 70, 'https://images.stockx.com/images/Air-Jordan-1-Mid-Light-Smoke-Grey-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606319491&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Mid Light Smoke Grey', 70)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-High-OG-Black-White-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707164705&q=60" alt="Shoe 10">
+                <h3>Jordan 1 Retro High OG Black White</h3>
+                <p>$70</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Retro High OG Black White', 70, 'https://images.stockx.com/images/Air-Jordan-1-High-OG-Black-White-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1707164705&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Retro High OG Black White', 70)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Low-Wolf-Grey-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1626802392&q=60" alt="Shoe 11">
+                <h3>Jordan 1 Low Wolf Grey</h3>
+                <p>$60</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Low Wolf Grey', 60, 'https://images.stockx.com/images/Air-Jordan-1-Low-Wolf-Grey-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1626802392&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Low Wolf Grey', 60)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-12-Retro-Cherry-2023-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1698091901&q=60" alt="Shoe 12">
+                <h3>Jordan 12 Retro Cherry</h3>
+                <p>$55</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 12 Retro Cherry', 55, 'https://images.stockx.com/images/Air-Jordan-12-Retro-Cherry-2023-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1698091901&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 12 Retro Cherry', 55)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Dark-Mocha-2-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1616187367&q=60" alt="Shoe 13">
+                <h3>Jordan 1 Retro High Dark Mocha</h3>
+                <p>$60</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Retro High Dark Mocha', 60, 'https://images.stockx.com/images/Air-Jordan-1-Retro-High-Dark-Mocha-2-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1616187367&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Retro High Dark Mocha', 60)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Mid-Panda-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1688733007&q=60" alt="Shoe 14">
+                <h3>Jordan 1 Mid Panda</h3>
+                <p>$40</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Mid Panda', 40, 'https://images.stockx.com/images/Air-Jordan-1-Mid-Panda-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1688733007&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Mid Panda', 40)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Mid-Black-Royal-Metallic-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1703711240&q=60" alt="Shoe 15">
+                <h3>Jordan 1 Mid Black Royal Blue</h3>
+                <p>$80</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Mid Black Royal Blue', 80, 'https://images.stockx.com/images/Air-Jordan-1-Mid-Black-Royal-Metallic-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1703711240&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Mid Black Royal Blue', 80)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Low-Ashen-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1652209562&q=60" alt="Shoe 16">
+                <h3>Jordan 1 Low Ashen Slate</h3>
+                <p>$50</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Low Ashen Slate', 50, 'https://images.stockx.com/images/Air-Jordan-1-Low-Ashen-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1652209562&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Low Ashen Slate', 50)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Low-UNC-W-Product.png?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1686755735&q=60" alt="Shoe 17">
+                <h3>Jordan 1 Low UNC (Women's)</h3>
+                <p>$60</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Low UNC (Womens)', 60, 'https://images.stockx.com/images/Air-Jordan-1-Low-UNC-W-Product.png?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1686755735&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Low UNC (Womens)', 60)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Low-Bred-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1637253420&q=60" alt="Shoe 18">
+                <h3>Jordan 1 Low Bred Toe</h3>
+                <p>$70</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Low Bred Toe', 70, 'https://images.stockx.com/images/Air-Jordan-1-Low-Bred-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1637253420&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Low Bred Toe', 70)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-True-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1674026406&q=60" alt="Shoe 19">
+                <h3>Jordan 1 Retro High OG True Blue</h3>
+                <p>$80</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Retro High OG True Blue', 80, 'https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-True-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1674026406&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Retro High OG True Blue', 80)">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606322396&q=60" alt="Shoe 20">
+                <h3>Jordan 1 Retro High Fearless UNC Chicago</h3>
+                <p>$90</p>
+                <select class="shoe-sizes">
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+                <button onclick="addToCart('Jordan 1 Retro High Fearless UNC Chicago', 90, 'https://images.stockx.com/images/Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1606322396&q=60')">Add to Cart</button>
+                <button onclick="buyNow('Jordan 1 Retro High Fearless UNC Chicago', 90)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div class="footer-content">
+            <div class="latest-releases">
+                <h3>Latest Releases</h3>
+                <ul>
+                    <li><a href="#">Nike Air Max 2024</a></li>
+                    <li><a href="#">Air Jordan Retro 13</a></li>
+                    <li><a href="#">New Balance 990v8</a></li>
+                </ul>
+            </div>
+            <div class="sales">
+                <h3>Sales</h3>
+                <ul>
+                    <li><a href="#">Nike: Up to 50% off</a></li>
+                    <li><a href="#">Air Jordan: Buy one, get one 30% off</a></li>
+                    <li><a href="#">New Balance: Summer clearance sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; ShoeStock</p>
+    </footer>
+   
+
+
+    <script src="script.js"></script>
+</body>

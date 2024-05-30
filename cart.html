@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">ShoeStock</a>
+        <div class="logo">Cart</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="nike.html">nike ✔</a></li>
+                <li><a href="adidas.html">adidas</a></li>
+                <li><a href="details.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Items in Your Cart</h2>
+        <div id="cart-items">
+        </div>
+        <p id="total-price">Total: $0</p>
+        <button onclick="clearCart()">CheckOut</button>
+        <div id="purchase-message" style="display: none;">
+            <p>Thank you for purchasing!</p>
+            <button onclick="goBackToMerchant()">Go back to merchant</button>
+        </div>
+    </section>
+
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div class="latest-releases">
+                <h3>Latest Releases</h3>
+                <ul>
+                    <li><a href="#">Nike Air Max 2024</a></li>
+                    <li><a href="#">Air Jordan Retro 13</a></li>
+                    <li><a href="#">New Balance 990v8</a></li>
+                </ul>
+            </div>
+            <div class="sales">
+                <h3>Sales</h3>
+                <ul>
+                    <li><a href="#">Nike: Up to 50% off</a></li>
+                    <li><a href="#">Air Jordan: Buy one, get one 30% off</a></li>
+                    <li><a href="#">New Balance: Summer clearance sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; ShoeStock</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

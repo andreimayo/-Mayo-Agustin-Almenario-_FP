@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Purchase Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <a href="index.html" class="logo">ShoeStock</a>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>   
+            <li><a href="nike.html">nike ✔</a></li>
+            <li><a href="adidas.html">adidas</a></li>
+            <li><a href="details.html">Account</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <form id="purchase-form" action="purchase.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="name">Email Address:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="2" cols="50" required></textarea><br><br>
+
+        <label for="payment">Payment Method:</label><br>
+        <select id="payment" name="payment">
+            <option value="gcash">GCash</option>
+            <option value="cod">Cash on Delivery</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Order">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

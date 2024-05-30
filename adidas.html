@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="adidas">
+    <header>
+        <a href="index.html" class="logo">ShoeStock</a>
+        <div class="logo">adidas</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>   
+                <li><a href="nike.html">nike ✔</a></li>
+                <li><a href="adidas.html">adidas</a></li>
+                <li><a href="details.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sales</h2>
+        <div class="shoe-container">
+        <div class="shoe-item">
+            <img src="https://images.stockx.com/images/adidas-Samba-Nylon-Wales-Bonner-Wonder-Clay-Royal-Updated.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1715745869&q=60" alt="Shoe 7">
+            <h3>adidas Samba Nylon Wales</h3>
+            <p>$55</p>
+            <select class="shoe-sizes">
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="10.5">10.5</option>
+                <option value="11">11</option>
+                <option value="11.5">11.5</option>
+                <option value="12">12</option>
+            </select>
+            <button onclick="addToCart('adidas Samba Nylon Wales', 55, 'https://images.stockx.com/images/adidas-Samba-Nylon-Wales-Bonner-Wonder-Clay-Royal-Updated.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1715745869&q=60')">Add to Cart</button>
+            <button onclick="buyNow('adidas Samba Nylon Wales', 55)">Buy Now</button>
+        </div>
+        <div class="shoe-container"></div>
+        <div class="shoe-item">
+            <img src="https://images.stockx.com/images/adidas-Campus-00s-Core-Black-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1681283876&q=57" alt="Shoe 7">
+            <h3>adidas Campus 00s Black</h3>
+            <p>$60</p>
+            <select class="shoe-sizes">
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="10.5">10.5</option>
+                <option value="11">11</option>
+                <option value="11.5">11.5</option>
+                <option value="12">12</option>
+            </select>
+            <button onclick="addToCart('adidas Campus 00s Black', 60, 'https://images.stockx.com/images/adidas-Campus-00s-Core-Black-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1681283876&q=57')">Add to Cart</button>
+            <button onclick="buyNow('adidas Campus 00s Black', 60)">Buy Now</button>
+        </div>
+        <div class="shoe-container"></div>
+        <div class="shoe-item">
+            <img src="https://images.stockx.com/images/adidas-Samba-OG-Cardboard-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1712948659&q=57" alt="Shoe 7">
+            <h3>adidas Samba OG Cardboard</h3>
+            <p>$60</p>
+            <select class="shoe-sizes">
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="10.5">10.5</option>
+                <option value="11">11</option>
+                <option value="11.5">11.5</option>
+                <option value="12">12</option>
+            </select>
+            <button onclick="addToCart('adidas Samba OG Cardboard', 60, 'https://images.stockx.com/images/adidas-Samba-OG-Cardboard-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1712948659&q=57')">Add to Cart</button>
+            <button onclick="buyNow('adidas Samba OG Cardboard', 60)">Buy Now</button>
+        </div>'
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="latest-releases">
+                <h3>Latest Releases</h3>
+                <ul>
+                    <li><a href="#">Nike Air Max 2024</a></li>
+                    <li><a href="#">Air Jordan Retro 13</a></li>
+                    <li><a href="#">New Balance 990v8</a></li>
+                </ul>
+            </div>
+            <div class="sales">
+                <h3>Sales</h3>
+                <ul>
+                    <li><a href="#">Nike: Up to 50% off</a></li>
+                    <li><a href="#">Air Jordan: Buy one, get one 30% off</a></li>
+                    <li><a href="#">New Balance: Summer clearance sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; ShoeStock</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
